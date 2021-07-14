@@ -1,25 +1,29 @@
-// septinta uzduotis
+let rezultatas = 0;
 
-let numberr = 0;
-
-const minusND7 = document.querySelector("minus");
-const plusND7 = document.querySelector("plus");
-const numberND7 = document.querySelector(".number");
-const resetND7 = document.querySelector(".reset");
+const minusDOM = document.querySelector(".minus");
+const plusDOM = document.querySelector(".plus");
+const numberDOM = document.querySelector(".number");
+const resetDOM = document.querySelector(".reset");
 
 function minusClick() {
-    numberrND7.innerText = number - 1;
+    rezultatas = rezultatas - 1;
+    numberDOM.innerText = rezultatas;
+
+    // galima buvo rasyti = numberDOM.innerText = --rezultatas
 }
 
-function plusClick() {
-    numberrND7.innerText = number + 1;
+function plusCick() {
+    rezultatas = rezultatas + 1;
+    numberDOM.innerText = rezultatas;
+
+     // galima buvo rasyti = numberDOM.innerText = ++rezultatas
 }
 
 function resetClick() {
-    numberrND7.innerText = 0;
+    rezultatas = 0;
+    numberDOM.innerText = rezultatas;
 }
 
-minusND7.addEventListener('Click', minusClick); 
-plussND7.addEventListener('Click', plusClick); 
-resetND7.addEventListener('Click', resetClick); 
-
+minusDOM.addEventListener('click', minusClick);
+plusDOM.addEventListener('click', plusCick);
+resetDOM.addEventListener('click', resetClick);
