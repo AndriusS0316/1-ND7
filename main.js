@@ -16,7 +16,7 @@ function plusCick() {
     rezultatas = rezultatas + 1;
     numberDOM.innerText = rezultatas;
 
-     // galima buvo rasyti = numberDOM.innerText = ++rezultatas
+    // galima buvo rasyti = numberDOM.innerText = ++rezultatas
 }
 
 function resetClick() {
