@@ -1,3 +1,5 @@
+// septinta uzduotis
+
 let rezultatas = 0;
 
 const minusDOM = document.querySelector(".minus");
